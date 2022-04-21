@@ -1,0 +1,9 @@
+server:
+  port: 52145
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:52996/eureka
+spring:
+  application:
+    name: Gateway

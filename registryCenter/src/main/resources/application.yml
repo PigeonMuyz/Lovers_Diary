@@ -1,1 +1,11 @@
-
+server:
+  port: 52996
+eureka:
+  server:
+    my-url: http://localhost:${server.port}/eureka
+  client:
+    service-url:
+      defaultZone: http://localhost:${server.port}/eureka
+spring:
+  application:
+    name: RegistryCenter

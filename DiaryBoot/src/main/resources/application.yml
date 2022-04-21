@@ -1,0 +1,17 @@
+server:
+  port: 7150
+spring:
+  application:
+    name: DiaryBoot
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.31.7/mub
+    username: root
+    password: Htc0319@
+  cloud:
+    discovery:
+      enabled: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:52996/eureka
